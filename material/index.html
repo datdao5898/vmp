@@ -1,0 +1,781 @@
+<!DOCTYPE html><html lang='vi'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Combo 2 Khoa Hoc Giang Vien Noi Bo - VMP Academy</title><style>*{margin:0;padding:0;box-sizing:border-box}:root{--navy:#0D1B3E;--dark:#071029;--orange:#FF6B00;--gold:#F59E0B;--indigo:#4F5EDB;--white:#F8FAFC;--glass:rgba(255,255,255,0.06);--border:rgba(255,255,255,0.12)}html,body{width:100%;max-width:100vw;overflow-x:hidden}body{font-family:'Inter',sans-serif;background:var(--dark);color:var(--white)}@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap');h1,h2,h3{font-family:'Outfit',sans-serif}.container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}a{text-decoration:none;color:inherit}.btn{display:inline-block;padding:12px 28px;border-radius:8px;font-weight:600;font-size:0.95rem;cursor:pointer;transition:all .3s;border:none}.btn-orange{background:var(--orange);color:#fff}.btn-orange:hover{background:#e55f00;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,107,0,.4)}.btn-outline{background:transparent;border:2px solid var(--orange);color:var(--orange)}.btn-outline:hover{background:var(--orange);color:#fff}.section{padding:70px 0}.section-title{text-align:center;margin-bottom:40px}.section-title h2{font-size:2rem;margin-bottom:10px}.section-title p{color:#94a3b8;font-size:1rem}.glass-card{background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:32px;backdrop-filter:blur(12px)}.badge{display:inline-block;padding:6px 16px;border-radius:100px;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}.badge-orange{background:rgba(255,107,0,.15);color:var(--orange);border:1px solid rgba(255,107,0,.3)}.badge-indigo{background:rgba(79,94,219,.15);color:#818cf8;border:1px solid rgba(79,94,219,.3)}@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,107,0,.4)}70%{box-shadow:0 0 0 12px rgba(255,107,0,0)}}.animate{animation:fadeUp .6s ease forwards}.stat-num{font-family:'Outfit',sans-serif;font-size:2.2rem;font-weight:800;color:var(--orange)}.divider{width:50px;height:4px;background:linear-gradient(90deg,var(--orange),var(--gold));border-radius:4px;margin:12px auto}.tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);padding:6px 14px;border-radius:100px;font-size:.8rem;margin:4px}.icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}.scroll-card { opacity:0; transform:translateY(30px); transition:all 0.6s cubic-bezier(0.16,1,0.3,1); } .scroll-card.visible { opacity:1; transform:translateY(0); } @media (max-width: 768px) { html { font-size: 14px; } .container { padding: 0 16px; } h1 { font-size: 1.7rem !important; } h2 { font-size: 1.5rem !important; } h3 { font-size: 1.2rem !important; } .stat-num { font-size: 1.8rem !important; } .glass-card { padding: 20px; } } @media (max-width: 480px) { html { font-size: 13px; } h1 { font-size: 1.5rem !important; line-height: 1.3 !important; } h2 { font-size: 1.3rem !important; } .btn { width: 100%; text-align: center; } }</style></head>
+<body><div id='top'></div><!-- HERO -->
+<section style='min-height:90vh;background:linear-gradient(135deg,#071029 0%,#0D1B3E 50%,#1a2a5e 100%);display:flex;align-items:center;position:relative;overflow:hidden;padding:70px 0 40px'>
+  <div style='position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 70% 50%,rgba(255,107,0,.08) 0%,transparent 60%)'></div>
+  <div class='container' style='position:relative;z-index:1'>
+    <div style='display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:30px'>
+      
+      <!-- Text Content -->
+      <div style='flex:1 1 500px;max-width:680px'>
+        <h1 style='font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;margin-bottom:12px'>
+          Khóa Học Phát Triển <br><span style='color:var(--orange)'>Giảng Viên Nội Bộ</span> <br>Chuyên Nghiệp
+        </h1>
+        <p style='font-size:1rem;color:#94a3b8;line-height:1.5;margin-bottom:20px'>
+          Lộ trình đào tạo <strong style='color:#fff'>Giảng viên nội bộ hiệu suất cao</strong><br>theo Phương pháp "Learning by Doing" tập trung 70% thực hành<br>bám sát <strong style='color:#fff'>công việc thực tế</strong> — <span style='color:var(--orange);font-weight:bold'>Học xong làm được ngay!</span>
+        </p>
+        <div style='display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px'>
+          <a href='#' onclick='openBrochureModal(event, "Combo Toàn Diện")' class='btn btn-orange' style='animation:pulse 2s infinite'>⬇️ Tải Brochure Combo</a>
+          <button onclick="scrollToForm()" class='btn btn-outline'>LIÊN HỆ TƯ VẤN</button>
+        </div>
+        <div style='display:flex;gap:24px;flex-wrap:wrap'>
+          <div>
+            <div style='font-family:"Outfit",sans-serif;font-size:1.8rem;font-weight:800;color:var(--orange)'>800+</div>
+            <div style='color:#94a3b8;font-size:.85rem'>Doanh nghiệp</div>
+          </div>
+          <div>
+            <div style='font-family:"Outfit",sans-serif;font-size:1.8rem;font-weight:800;color:var(--orange)'>18K</div>
+            <div style='color:#94a3b8;font-size:.85rem'>Trainers tốt nghiệp</div>
+          </div>
+          <div>
+            <div style='font-family:"Outfit",sans-serif;font-size:1.8rem;font-weight:800;color:var(--orange)'>600+</div>
+            <div style='color:#94a3b8;font-size:.85rem'>Lớp đã tổ chức</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Content -->
+      <div class='animate' style='flex:1 1 350px;max-width:450px;display:flex;justify-content:center;position:relative'>
+        <div style='position:absolute;width:100%;height:100%;background:rgba(255,107,0,0.1);filter:blur(60px);border-radius:50%;z-index:0'></div>
+        <img src='Trainer Photo.jpg' alt='Chuyên gia đào tạo VMP' style='width:100%;max-width:420px;border-radius:24px;position:relative;z-index:1;box-shadow:0 24px 48px rgba(0,0,0,0.4);border:2px solid rgba(255,255,255,0.05);object-fit:cover'>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- PAIN POINTS -->
+<section class='section' style='background:var(--navy)'>
+  <div class='container'>
+    <div class='section-title'>
+      <h2>Trainer Nội Bộ Thường Gặp Những Thách Thức Này</h2>
+      <div class='divider'></div>
+    </div>
+    <div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px'>
+      
+      <!-- Card 1 (PDT) -->
+      <div class='glass-card' style='border-top:4px solid var(--indigo);text-align:center;padding:30px 20px'>
+        <div style='width:80px;height:80px;border-radius:20px;background:linear-gradient(135deg, rgba(129,140,248,0.15), rgba(129,140,248,0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;border:1px solid rgba(129,140,248,0.3)'>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <circle cx="12" cy="14" r="3"/>
+            <path d="M12 12v2l1.5 1.5"/>
+          </svg>
+        </div>
+        <h3 style='margin-bottom:12px;font-size:1.1rem;line-height:1.3'>Mất Nhiều Thời Gian<br>Soạn Giáo Án</h3>
+        <p style='color:#94a3b8;font-size:.9rem;line-height:1.5'>Tốn hàng tuần làm slide thủ công, chắp vá nội dung lan man nhưng vẫn không đáp ứng đúng nhu cầu thực tế của doanh nghiệp (TNA).</p>
+      </div>
+
+      <!-- Card 2 (TTT3+) -->
+      <div class='glass-card' style='border-top:4px solid var(--orange);text-align:center;padding:30px 20px'>
+        <div style='width:80px;height:80px;border-radius:20px;background:linear-gradient(135deg, rgba(255,107,0,0.15), rgba(255,107,0,0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;border:1px solid rgba(255,107,0,0.3)'>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"></path>
+            <circle cx="8.5" cy="7" r="4"></circle>
+            <line x1="18" y1="8" x2="23" y2="13"></line>
+            <line x1="23" y1="8" x2="18" y2="13"></line>
+          </svg>
+        </div>
+        <h3 style='margin-bottom:12px;font-size:1.1rem;line-height:1.3'>Lớp Học Nhàm Chán,<br>Kém Tương Tác</h3>
+        <p style='color:#94a3b8;font-size:.9rem;line-height:1.5'>Bị phụ thuộc vào slide, thiếu kỹ năng hoạt náo và nghệ thuật điều phối khiến không khí trầm lắng, tỷ lệ ứng dụng sau đào tạo thấp.</p>
+      </div>
+
+      <!-- Card 3 (Combo) -->
+      <div class='glass-card' style='border-top:4px solid #10b981;text-align:center;padding:30px 20px'>
+        <div style='width:80px;height:80px;border-radius:20px;background:linear-gradient(135deg, rgba(16,185,129,0.15), rgba(16,185,129,0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;border:1px solid rgba(16,185,129,0.3)'>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </div>
+        <h3 style='margin-bottom:12px;font-size:1.1rem;line-height:1.3'>Đào Tạo Bản Năng,<br>Thiếu Hệ Thống</h3>
+        <p style='color:#94a3b8;font-size:.9rem;line-height:1.5'>Chỉ truyền đạt theo kinh nghiệm cá nhân, chưa có khung năng lực chuẩn để đóng gói tri thức và nhân bản đội ngũ kế thừa.</p>
+      </div>
+
+    </div>
+    <div style='text-align:center;margin-top:48px'>
+      <button onclick="scrollToForm()" class="btn btn-orange" style="box-shadow:0 8px 24px rgba(255,107,0,0.3)">Đăng Ký Tư Vấn</button>
+    </div>
+  </div>
+</section>
+
+<!-- TARGET AUDIENCE -->
+<section style='padding:80px 20px;background:var(--bg-lighter)'>
+  <div style='max-width:1100px;margin:0 auto'>
+    
+    <div style='text-align:center;margin-bottom:56px'>
+      <h2 style='font-size:2.2rem'>Combo 5 Ngày Dành Cho Ai?</h2>
+      <div style='width:60px;height:4px;background:var(--orange);margin:16px auto 0'></div>
+    </div>
+
+    <div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px'>
+      
+      <!-- Trainer -->
+      <div style='background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:40px 32px;text-align:center;transition:all 0.3s;box-shadow:0 10px 30px rgba(0,0,0,0.2)' onmouseover='this.style.transform=`translateY(-8px)`;this.style.background=`rgba(255,255,255,0.05)`;this.style.borderColor=`rgba(255,107,0,0.3)`' onmouseout='this.style.transform=`translateY(0)`;this.style.background=`rgba(255,255,255,0.02)`;this.style.borderColor=`rgba(255,255,255,0.06)`'>
+        <div style='width:80px;height:80px;background:rgba(255,107,0,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2.5rem'>🎓</div>
+        <h4 style='font-size:1.2rem;color:#fff;margin-bottom:16px'>Trainer / Giảng viên nội bộ</h4>
+        <p style='color:#94a3b8;font-size:0.95rem;line-height:1.6;margin:0'>Tìm kiếm phương pháp đào tạo chuẩn hóa, cách dẫn giảng thu hút và ứng dụng AI để tối ưu 70% thời gian soạn giáo án.</p>
+      </div>
+
+      <!-- HR -->
+      <div style='background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:40px 32px;text-align:center;transition:all 0.3s;box-shadow:0 10px 30px rgba(0,0,0,0.2)' onmouseover='this.style.transform=`translateY(-8px)`;this.style.background=`rgba(255,255,255,0.05)`;this.style.borderColor=`rgba(129,140,248,0.3)`' onmouseout='this.style.transform=`translateY(0)`;this.style.background=`rgba(255,255,255,0.02)`;this.style.borderColor=`rgba(255,255,255,0.06)`'>
+        <div style='width:80px;height:80px;background:rgba(129,140,248,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2.5rem'>📊</div>
+        <h4 style='font-size:1.2rem;color:#fff;margin-bottom:16px'>Training Manager / HR</h4>
+        <p style='color:#94a3b8;font-size:0.95rem;line-height:1.6;margin:0'>Muốn xây dựng đội ngũ giảng viên bài bản, tự động hóa quy trình phân tích nhu cầu (TNA) và thiết kế lộ trình phát triển.</p>
+      </div>
+
+      <!-- Manager -->
+      <div style='background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:40px 32px;text-align:center;transition:all 0.3s;box-shadow:0 10px 30px rgba(0,0,0,0.2)' onmouseover='this.style.transform=`translateY(-8px)`;this.style.background=`rgba(255,255,255,0.05)`;this.style.borderColor=`rgba(16,185,129,0.3)`' onmouseout='this.style.transform=`translateY(0)`;this.style.background=`rgba(255,255,255,0.02)`;this.style.borderColor=`rgba(255,255,255,0.06)`'>
+        <div style='width:80px;height:80px;background:rgba(16,185,129,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2.5rem'>👔</div>
+        <h4 style='font-size:1.2rem;color:#fff;margin-bottom:16px'>Quản lý / Lãnh đạo</h4>
+        <p style='color:#94a3b8;font-size:0.95rem;line-height:1.6;margin:0'>Thường xuyên huấn luyện, truyền đạt kinh nghiệm cho đội nhóm và cần công cụ AI để đóng gói tri thức nhanh chóng.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MARKET REPORT & TRENDS -->
+<section style='padding:80px 20px;background:linear-gradient(135deg, rgba(255,107,0,0.05) 0%, rgba(129,140,248,0.05) 100%);border-top:1px solid rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.05)'>
+<div style='max-width:1100px;margin:0 auto'>
+  <!-- Header -->
+  <div style='text-align:center;margin-bottom:48px'>
+    <h3 style='font-size:2rem;margin-bottom:12px;color:#fff'>8 Kỹ Năng Lõi Của Trainer Hiện Đại</h3>
+    <p style='color:#94a3b8;font-size:0.9rem;line-height:1.5;max-width:800px;margin:0 auto'>(Dựa trên báo cáo từ LinkedIn Workplace Learning 2024, RMIT & Adecco Vietnam)</p>
+  </div>
+
+  <style>
+    .skill-tag { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 8px 12px; border-radius: 10px; font-size: 0.85rem; color: #e2e8f0; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; transition: background 0.3s; white-space: nowrap; }
+    .skill-tag:hover { background: rgba(255,255,255,0.1); }
+    .skill-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .skill-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    @media (max-width: 768px) {
+      .skill-grid-2, .skill-grid-3 { grid-template-columns: 1fr; }
+      .skill-tag { white-space: normal; text-align: center; }
+    }
+  </style>
+
+  <!-- Storytelling Visualization -->
+  <div style='max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:12px'>
+    
+    <!-- Phase 1 -->
+    <div style='background:linear-gradient(90deg, rgba(129,140,248,0.08), rgba(129,140,248,0.01));border:1px solid rgba(129,140,248,0.2);border-radius:20px;padding:24px;display:flex;align-items:center;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:transform 0.3s' onmouseover='this.style.transform="scale(1.01)"' onmouseout='this.style.transform="scale(1)"'>
+      
+      <div style='display:flex;align-items:center;gap:20px;flex:1'>
+        <div style='width:60px;height:60px;background:rgba(129,140,248,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#818cf8;font-size:1.8rem;flex-shrink:0;border:2px solid rgba(129,140,248,0.3);box-shadow:0 0 20px rgba(129,140,248,0.2)'>🛠️</div>
+        <div style='position:relative;z-index:2;flex:1'>
+          <h4 style='color:#818cf8;font-size:1.15rem;margin-bottom:6px'>Trang Bị & Thiết Kế (Trước Khóa Học)</h4>
+          <p style='color:#94a3b8;font-size:0.9rem;margin-bottom:12px;line-height:1.5'>Bắt đầu bằng việc thấu hiểu học viên và ứng dụng công nghệ để tối ưu 70% thời gian đóng gói tri thức.</p>
+          <div class='skill-grid-3'>
+             <div class='skill-tag'>🔍 Phân Tích Nhu Cầu (TNA)</div>
+             <div class='skill-tag'>📋 Thiết Kế Chương Trình</div>
+             <div class='skill-tag'>🤖 Ứng Dụng AI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div style='display:flex;justify-content:center;height:24px;align-items:center'>
+      <div style='width:2px;height:100%;background:linear-gradient(180deg, rgba(129,140,248,0.5), rgba(255,107,0,0.5))'></div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div style='background:linear-gradient(90deg, rgba(255,107,0,0.08), rgba(255,107,0,0.01));border:1px solid rgba(255,107,0,0.2);border-radius:20px;padding:24px;display:flex;align-items:center;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:transform 0.3s' onmouseover='this.style.transform="scale(1.01)"' onmouseout='this.style.transform="scale(1)"'>
+      
+      <div style='display:flex;align-items:center;gap:20px;flex:1'>
+        <div style='width:60px;height:60px;background:rgba(255,107,0,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:1.8rem;flex-shrink:0;border:2px solid rgba(255,107,0,0.3);box-shadow:0 0 20px rgba(255,107,0,0.2)'>🎤</div>
+        <div style='position:relative;z-index:2;flex:1'>
+          <h4 style='color:var(--orange);font-size:1.15rem;margin-bottom:6px'>Tỏa Sáng & Thu Hút (Trong Khóa Học)</h4>
+          <p style='color:#94a3b8;font-size:0.9rem;margin-bottom:12px;line-height:1.5'>Làm chủ bục giảng bằng phong thái tự tin, nghệ thuật dẫn dắt và các hoạt động tương tác bùng nổ.</p>
+          <div class='skill-grid-2'>
+             <div class='skill-tag'>💪 Sự Tự Tin Sân Khấu</div>
+             <div class='skill-tag'>🗣️ Dẫn Giảng & Trình Bày</div>
+             <div class='skill-tag'>🎯 Điều Phối & Hoạt Náo</div>
+             <div class='skill-tag'>✨ Nội Dung Tương Tác</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div style='display:flex;justify-content:center;height:24px;align-items:center'>
+      <div style='width:2px;height:100%;background:linear-gradient(180deg, rgba(255,107,0,0.5), rgba(16,185,129,0.5))'></div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div style='background:linear-gradient(90deg, rgba(16,185,129,0.08), rgba(16,185,129,0.01));border:1px solid rgba(16,185,129,0.2);border-radius:20px;padding:24px;display:flex;align-items:center;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:transform 0.3s' onmouseover='this.style.transform="scale(1.01)"' onmouseout='this.style.transform="scale(1)"'>
+      
+      <div style='display:flex;align-items:center;gap:20px;flex:1'>
+        <div style='width:60px;height:60px;background:rgba(16,185,129,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#10b981;font-size:1.8rem;flex-shrink:0;border:2px solid rgba(16,185,129,0.3);box-shadow:0 0 20px rgba(16,185,129,0.2)'>📈</div>
+        <div style='position:relative;z-index:2;flex:1'>
+          <h4 style='color:#10b981;font-size:1.15rem;margin-bottom:6px'>Chứng Minh Giá Trị (Sau Khóa Học)</h4>
+          <p style='color:#94a3b8;font-size:0.9rem;margin-bottom:12px;line-height:1.5'>Chuyển hóa kiến thức thành kết quả thực tiễn, đóng góp trực tiếp vào mục tiêu kinh doanh của doanh nghiệp.</p>
+          <div style='display:inline-flex'>
+             <div class='skill-tag' style='width:100%'>📊 Đo Lường ROI Đào Tạo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<!-- 5-DAY ROADMAP -->
+<style>
+.tm-row { display: flex; align-items: flex-start; gap: 24px; width: 100%; margin-bottom: 24px; position: relative; }
+.tm-center { width: 48px; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2; flex-shrink: 0; }
+.tm-dot { width: 48px; height: 48px; border-radius: 50%; background: var(--dark); border: 3px solid var(--orange); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; color: #fff; box-shadow: 0 0 15px rgba(255,107,0,0.4); font-family: 'Outfit', sans-serif; position:relative;}
+.tm-dot.blue { border-color: #818cf8; box-shadow: 0 0 15px rgba(129,140,248,0.4); }
+.tm-card { background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); text-align: left; transition: transform 0.3s, box-shadow 0.3s; flex: 1; }
+.tm-card:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(255,107,0,0.15); border-color: rgba(255,107,0,0.3); }
+.tm-card.blue:hover { box-shadow: 0 15px 40px rgba(129,140,248,0.15); border-color: rgba(129,140,248,0.3); }
+.tm-line { position: absolute; top: 24px; bottom: 0; left: 24px; width: 3px; background: linear-gradient(180deg, var(--orange) 30%, #818cf8 70%); transform: translateX(-50%); border-radius: 3px; z-index: 1; }
+
+@media (max-width: 768px) {
+  .tm-row { gap: 16px; margin-bottom: 20px; }
+  .tm-dot { width: 40px; height: 40px; font-size: 1rem; }
+  .tm-center { width: 40px; }
+  .tm-line { left: 20px; }
+  .tm-card { padding: 20px; }
+}
+</style>
+
+<section id='roadmap' style='padding:80px 20px;background:var(--navy);position:relative;overflow:hidden'>
+  <div class='container' style='max-width:1100px'>
+    <div class='section-title' style='margin-bottom:40px'>
+      <h2 style='color:#fff'>Lịch trình chi tiết 5 ngày đào tạo</h2>
+      <div class='divider'></div>
+    </div>
+
+    <div style='position:relative;max-width:800px;margin:0 auto;margin-bottom:48px'>
+      <div class='tm-line'></div>
+
+      <!-- TTT3+ Header -->
+      <div style='margin-bottom:24px;position:relative;z-index:2;padding-left:64px'>
+        <span style='display:inline-block;background:rgba(255,107,0,0.15);border:1px solid var(--orange);color:var(--orange);padding:6px 20px;border-radius:100px;font-weight:700;letter-spacing:0.05em;font-size:0.85rem'>TRAIN THE TRAINER 3+</span>
+      </div>
+
+      <!-- Day 1 -->
+      <div class='tm-row'>
+        <div class='tm-center'><div class='tm-dot'>01</div></div>
+        <div class='tm-card scroll-card'>
+          <h3 style='color:var(--orange);font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px'>🎤 Nền Tảng Giảng Dạy</h3>
+          <ul style='list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:0.95rem'>
+            <li><strong style='color:#fff'>M1: Identify</strong> <span style='color:#94a3b8'>- Xác định 7 cấp độ và năng lực cốt lõi của Trainer.</span></li>
+            <li><strong style='color:#fff'>M2: Verify</strong> <span style='color:#94a3b8'>- Đánh giá giảng dạy, ứng dụng mô hình ASK và ngôn ngữ cơ thể.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class='tm-row'>
+        <div class='tm-center'><div class='tm-dot'>02</div></div>
+        <div class='tm-card scroll-card'>
+          <h3 style='color:var(--orange);font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px'>🎭 Thiết Kế & Phương Pháp</h3>
+          <ul style='list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:0.95rem'>
+            <li><strong style='color:#fff'>M3: Methods</strong> <span style='color:#94a3b8'>- Nắm vững 4 nguyên tắc và phong cách học tập.</span></li>
+            <li><strong style='color:#fff'>M4: Design</strong> <span style='color:#94a3b8'>- Thiết kế cấu trúc, kịch bản chương trình thu hút.</span></li>
+            <li><strong style='color:#fff'>M5: Perform</strong> <span style='color:#94a3b8'>- Quy trình mở đầu và kết thúc khóa học ấn tượng.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class='tm-row'>
+        <div class='tm-center'><div class='tm-dot'>03</div></div>
+        <div class='tm-card scroll-card'>
+          <h3 style='color:var(--orange);font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px'>🏆 Thực Chiến & Đánh Giá</h3>
+          <ul style='list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:0.95rem'>
+            <li><strong style='color:#fff'>M6: Resources</strong> <span style='color:#94a3b8'>- Làm chủ công cụ, PowerPoint và kỹ năng quản lý thời gian.</span></li>
+            <li><strong style='color:#fff'>M7: OSCAR</strong> <span style='color:#94a3b8'>- Thao giảng thực tế tại lớp, tranh giải và nhận cúp OSCAR.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PDT Header -->
+      <div style='margin-top:40px;margin-bottom:24px;position:relative;z-index:2;padding-left:64px'>
+        <span style='display:inline-block;background:rgba(129,140,248,0.15);border:1px solid #818cf8;color:#818cf8;padding:6px 20px;border-radius:100px;font-weight:700;letter-spacing:0.05em;font-size:0.85rem'>TỰ ĐỘNG HÓA THIẾT KẾ KHÓA HỌC</span>
+      </div>
+
+      <!-- Day 4 -->
+      <div class='tm-row'>
+        <div class='tm-center'><div class='tm-dot blue'>04</div></div>
+        <div class='tm-card blue scroll-card'>
+          <h3 style='color:#818cf8;font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px'>🧠 Tư Duy & Công Nghệ</h3>
+          <ul style='list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:0.95rem'>
+            <li><strong style='color:#fff'>Tư Duy Thiết Kế</strong> <span style='color:#94a3b8'>- Áp dụng quy trình OOC và 10 hành động thiết yếu.</span></li>
+            <li><strong style='color:#fff'>Tư Duy Công Nghệ</strong> <span style='color:#94a3b8'>- Nắm vững Prompt AI, quy trình AI và tips tối ưu công cụ.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class='tm-row' style='margin-bottom:0'>
+        <div class='tm-center'>
+          <div class='tm-dot blue'>05</div>
+          <div style='position:absolute;top:48px;bottom:0;left:0;right:0;background:var(--navy);z-index:1'></div>
+        </div>
+        <div class='tm-card blue scroll-card'>
+          <h3 style='color:#818cf8;font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px'>🤖 Tự Động Hóa Toàn Diện</h3>
+          <ul style='list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:0.95rem'>
+            <li><strong style='color:#fff'>Tự Động Hóa Thiết Kế</strong> <span style='color:#94a3b8'>- Triển khai TNA tự động, lập Outline và 7 định dạng nội dung bằng AI.</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- end timeline container -->
+
+    <div style='text-align:center;margin-top:48px;position:relative;z-index:10'><button onclick="scrollToForm()" class="btn btn-orange" style="box-shadow:0 8px 24px rgba(255,107,0,0.3)">Đăng Ký Tư Vấn</button></div>
+  </div>
+</section>
+<!-- BỎ SECTION GIẢNG VIÊN THEO YÊU CẦU 
+<!-- INSTRUCTORS -- >
+<section style='padding:80px 20px;background:var(--navy)'>
+  <div class='container' style='max-width:1000px'>
+    <div class='section-title'>
+      <div class='badge badge-indigo' style='margin-bottom:16px'>CHUYÊN GIA ĐÀO TẠO</div>
+      <h2 style='color:#fff'>Đội Ngũ Giảng Viên Đồng Hành Cùng Bạn</h2>
+      <div class='divider'></div>
+    </div>
+    
+    <div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px'>
+      
+      <!-- Trainer 1 -- >
+      <div class='scroll-card' style='background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:24px;overflow:hidden'>
+        <div style='padding:32px;display:flex;align-items:center;gap:20px;border-bottom:1px solid rgba(255,255,255,0.05)'>
+          <div style='width:100px;height:100px;border-radius:50%;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;border:2px solid var(--orange)'>
+            <span style='font-size:2.5rem'>👨‍🏫</span>
+          </div>
+          <div>
+            <h3 style='color:#fff;font-size:1.3rem;margin-bottom:4px'>Thầy Phan Hữu Lộc</h3>
+            <p style='color:var(--orange);font-size:0.9rem;font-weight:600;margin:0'>Chuyên gia đào tạo TTT3+</p>
+          </div>
+        </div>
+        <div style='padding:32px'>
+          <div style='display:grid;grid-template-columns:1fr 1fr;gap:16px'>
+             <div style='background:rgba(255,107,0,0.05);border:1px solid rgba(255,107,0,0.2);padding:16px 12px;border-radius:16px;text-align:center'>
+                <div style='font-size:1.8rem;font-weight:800;color:var(--orange);margin-bottom:4px;line-height:1'>20+</div>
+                <div style='font-size:0.8rem;color:#cbd5e1;text-transform:uppercase;letter-spacing:0.05em'>Năm Kinh Nghiệm</div>
+             </div>
+             <div style='background:rgba(255,107,0,0.05);border:1px solid rgba(255,107,0,0.2);padding:16px 12px;border-radius:16px;text-align:center'>
+                <div style='font-size:1.8rem;font-weight:800;color:var(--orange);margin-bottom:4px;line-height:1'>18K+</div>
+                <div style='font-size:0.8rem;color:#cbd5e1;text-transform:uppercase;letter-spacing:0.05em'>Học Viên Toàn Quốc</div>
+             </div>
+          </div>
+          <div style='margin-top:16px;background:linear-gradient(135deg,rgba(255,107,0,0.1),rgba(255,107,0,0.02));border:1px solid rgba(255,107,0,0.25);padding:16px;border-radius:16px;display:flex;align-items:center;gap:12px'>
+             <div style='font-size:1.5rem'>👑</div>
+             <div style='font-size:0.95rem;font-weight:600;color:#fff'>Sáng lập VMP Academy - Bậc thầy truyền cảm hứng</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer 2 -- >
+      <div class='scroll-card' style='transition-delay:150ms;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:24px;overflow:hidden'>
+        <div style='padding:32px;display:flex;align-items:center;gap:20px;border-bottom:1px solid rgba(255,255,255,0.05)'>
+          <div style='width:100px;height:100px;border-radius:50%;background:rgba(129,140,248,0.1);display:flex;align-items:center;justify-content:center;border:2px solid #818cf8'>
+            <span style='font-size:2.5rem'>👨‍💻</span>
+          </div>
+          <div>
+            <h3 style='color:#fff;font-size:1.3rem;margin-bottom:4px'>Thầy Nhật Minh Quang</h3>
+            <p style='color:#818cf8;font-size:0.9rem;font-weight:600;margin:0'>Chuyên gia thiết kế tự động PDT</p>
+          </div>
+        </div>
+        <div style='padding:32px'>
+          <div style='display:grid;grid-template-columns:1fr 1fr;gap:16px'>
+             <div style='background:rgba(129,140,248,0.05);border:1px solid rgba(129,140,248,0.2);padding:16px 12px;border-radius:16px;text-align:center'>
+                <div style='font-size:1.8rem;font-weight:800;color:#818cf8;margin-bottom:4px;line-height:1'>AI</div>
+                <div style='font-size:0.8rem;color:#cbd5e1;text-transform:uppercase;letter-spacing:0.05em'>Chuyên Gia EdTech</div>
+             </div>
+             <div style='background:rgba(129,140,248,0.05);border:1px solid rgba(129,140,248,0.2);padding:16px 12px;border-radius:16px;text-align:center'>
+                <div style='font-size:1.8rem;font-weight:800;color:#818cf8;margin-bottom:4px;line-height:1'>100%</div>
+                <div style='font-size:0.8rem;color:#cbd5e1;text-transform:uppercase;letter-spacing:0.05em'>Tự Động Hóa TNA</div>
+             </div>
+          </div>
+          <div style='margin-top:16px;background:linear-gradient(135deg,rgba(129,140,248,0.1),rgba(129,140,248,0.02));border:1px solid rgba(129,140,248,0.25);padding:16px;border-radius:16px;display:flex;align-items:center;gap:12px'>
+             <div style='font-size:1.5rem'>🚀</div>
+             <div style='font-size:0.95rem;font-weight:600;color:#fff'>Thiết kế nội dung, số hóa hệ thống siêu tốc</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+-->
+<!-- VALUE HIGHLIGHTS -->
+<section style='padding:80px 20px;background:var(--dark);position:relative'>
+  <div class='container' style='max-width:1100px'>
+    <div style='text-align:center;margin-bottom:64px'>
+      <h2 style='font-size:2.4rem;margin-bottom:16px;color:#fff'>Giá trị đạt được sau khóa học</h2>
+      <div style='width:60px;height:4px;background:var(--orange);margin:0 auto;border-radius:4px'></div>
+    </div>
+    
+    <div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px'>
+
+      <!-- Card 1 -->
+      <div class='scroll-card' style='position:relative;overflow:hidden;padding:32px 24px;background:linear-gradient(135deg,rgba(255,107,0,.1),rgba(255,107,0,.02));border-radius:20px;border:1px solid rgba(255,107,0,.2);transition:all .3s' onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 40px rgba(255,107,0,.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+
+        <div style='font-size:2.5rem;margin-bottom:16px'>🎙️</div>
+        <h3 style='font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.4'>Dẫn lớp thu hút<br>90%+ sự chú ý</h3>
+        <p style='color:#94a3b8;font-size:0.9rem;line-height:1.6;margin:0'>Làm chủ công thức OSCAR — 3V — 3S giúp lớp học sôi nổi từ đầu đến cuối.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class='scroll-card' style='transition-delay:100ms;position:relative;overflow:hidden;padding:32px 24px;background:linear-gradient(135deg,rgba(79,94,219,.1),rgba(79,94,219,.02));border-radius:20px;border:1px solid rgba(79,94,219,.2);transition:all .3s' onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 40px rgba(79,94,219,.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+
+        <div style='font-size:2.5rem;margin-bottom:16px'>🤖</div>
+        <h3 style='font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.4'>Rút ngắn 70%<br>thời gian thiết kế</h3>
+        <p style='color:#94a3b8;font-size:0.9rem;line-height:1.6;margin:0'>Tự động hóa hoàn toàn quy trình TNA — Outline — 7 định dạng nội dung bằng AI.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class='scroll-card' style='transition-delay:200ms;position:relative;overflow:hidden;padding:32px 24px;background:linear-gradient(135deg,rgba(16,185,129,.1),rgba(16,185,129,.02));border-radius:20px;border:1px solid rgba(16,185,129,.2);transition:all .3s' onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 40px rgba(16,185,129,.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+
+        <div style='font-size:2.5rem;margin-bottom:16px'>🌟</div>
+        <h3 style='font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.4'>Làm Được Ngay<br>Tại Lớp Học</h3>
+        <p style='color:#94a3b8;font-size:0.9rem;line-height:1.6;margin:0'>Thực hành 70% dựa trên Case Study thực tế. Cầm tay chỉ việc để tự tin áp dụng vào môi trường doanh nghiệp.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class='scroll-card' style='transition-delay:300ms;position:relative;overflow:hidden;padding:32px 24px;background:linear-gradient(135deg,rgba(245,158,11,.1),rgba(245,158,11,.02));border-radius:20px;border:1px solid rgba(245,158,11,.2);transition:all .3s' onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 40px rgba(245,158,11,.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+
+        <div style='font-size:2.5rem;margin-bottom:16px'>🤝</div>
+        <h3 style='font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.4'>Gia nhập cộng đồng<br>18.000+ Trainers</h3>
+        <p style='color:#94a3b8;font-size:0.9rem;line-height:1.6;margin:0'>Mạng lưới kết nối, học hỏi và hợp tác từ 800+ tập đoàn doanh nghiệp hàng đầu.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- GALLERY & VIDEO -->
+<section id='gallery' style='padding:80px 20px;background:var(--bg-lighter)'>
+  <div style='max-width:1100px;margin:0 auto'>
+    <div style='text-align:center;margin-bottom:36px'>
+      <h3 style='font-size:1.8rem;margin-bottom:12px'>Không Khí Lớp Học TTT3+ & PDT</h3>
+      <div style='width:50px;height:4px;background:var(--orange);margin:0 auto'></div>
+    </div>
+    
+    <div style='display:grid;grid-template-columns:2fr 1fr;gap:24px'>
+      <!-- Main Video/Large Image -->
+      <div style='background:#1e293b;border-radius:24px;overflow:hidden;aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.1)'>
+        <div style='position:absolute;width:64px;height:64px;background:rgba(255,107,0,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 0 30px rgba(255,107,0,0.5)'>
+          <div style='width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid #fff;margin-left:6px'></div>
+        </div>
+        <span style='color:#64748b;font-weight:600'>[Video Cảm Nhận Học Viên]</span>
+      </div>
+      <!-- Side Images -->
+      <div style='display:flex;flex-direction:column;gap:24px'>
+        <div style='background:#1e293b;border-radius:24px;flex:1;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center'>
+          <span style='color:#64748b'>[Hình Ảnh Lớp Offline]</span>
+        </div>
+        <div style='background:#1e293b;border-radius:24px;flex:1;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center'>
+          <span style='color:#64748b'>[Hình Ảnh Lớp Zoom]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- TESTIMONIALS --><section class='section' style='background:var(--navy)'><div class='container'><div class='section-title'><h2>Cảm Nhận Thực Tế Từ Học Viên</h2><div class='divider'></div></div><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px'><div class='glass-card'><div style='color:var(--gold);font-size:1.5rem;margin-bottom:12px'>★★★★★</div><p style='color:#cbd5e1;font-size:.95rem;line-height:1.7;font-style:italic;margin-bottom:16px'>&ldquo;Train The Trainer 3+ đã thay đổi hoàn toàn mindset của tôi. Tôi hiểu rằng học viên sẽ tập trung vào Trainer hơn là đọc slide.&rdquo;</p><div style='display:flex;align-items:center;gap:10px'><div style='width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--gold));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem'>NT</div><div><div style='font-weight:600;font-size:.9rem'>Anh Ngọc Tiến</div><div style='color:#94a3b8;font-size:.8rem'>ANHEUSER BUSCH INBEV VN</div></div></div></div><div class='glass-card'><div style='color:var(--gold);font-size:1.5rem;margin-bottom:12px'>★★★★★</div><p style='color:#cbd5e1;font-size:.95rem;line-height:1.7;font-style:italic;margin-bottom:16px'>&ldquo;Chỉ 3 ngày học được công thức OSCAR — thay vì mất nhiều năm tự nghiên cứu. Giúp tôi giải quyết vấn đề nhanh và truyền đạt lại cho công ty.&rdquo;</p><div style='display:flex;align-items:center;gap:10px'><div style='width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#818cf8,var(--indigo));display:flex;align-items:center;justify-content:font-size:.85rem font-weight:700'>LC</div><div><div style='font-weight:600;font-size:.9rem'>Lê Chí Công</div><div style='color:#94a3b8;font-size:.8rem'>Japfa Comfeed Vietnam</div></div></div></div><div class='glass-card'><div style='color:var(--gold);font-size:1.5rem;margin-bottom:12px'>★★★★★</div><p style='color:#cbd5e1;font-size:.95rem;line-height:1.7;font-style:italic;margin-bottom:16px'>&ldquo;VMP giúp tôi nhận ra mình có thể trở thành nhà đào tạo. Công thức OSCAR và phương pháp IVMP giúp luôn nhớ và áp dụng dễ dàng.&rdquo;</p><div style='display:flex;align-items:center;gap:10px'><div style='width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem'>TT</div><div><div style='font-weight:600;font-size:.9rem'>Nguyễn Thị Thanh Thủy</div><div style='color:#94a3b8;font-size:.8rem'>Phó GĐ Nhân Sự — Đại Dũng Corp</div></div></div></div></div></div></section>
+
+<!-- ĐĂNG KÝ & LỊCH KHAI GIẢNG -->
+<section id='register-section' style='padding:50px 20px;background:linear-gradient(180deg,var(--dark),var(--navy))'>
+  <div class='container' style='max-width:1000px'>
+    <div style='margin-bottom:24px;text-align:center'>
+      <h2 style='font-size:1.6rem;color:#fff;margin-bottom:8px'>Đăng Ký Ngay Hôm Nay</h2>
+    </div>
+    
+    <div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;align-items:stretch'>
+      
+      <!-- Left: Form -->
+      <div style='background:#fff;border-radius:16px;padding:24px 20px;border:3px solid var(--orange);box-shadow:0 0 30px rgba(255,107,0,0.15);height:100%'>
+        <form id="registerForm" onsubmit="submitForm(event)" style='display:flex;flex-direction:column;gap:10px;height:100%;justify-content:space-between'>
+          <div>
+            <input type="text" placeholder="Công ty *" required style="width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.9rem;color:#0f172a;margin-bottom:10px">
+            <input type="text" placeholder="Họ và Tên *" required style="width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.9rem;color:#0f172a;margin-bottom:10px">
+            <input type="text" placeholder="Chức danh" style="width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.9rem;color:#0f172a;margin-bottom:10px">
+            <input type="tel" placeholder="SĐT *" required style="width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.9rem;color:#0f172a;margin-bottom:10px">
+            <input type="email" placeholder="Email *" required style="width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.9rem;color:#0f172a;margin-bottom:10px">
+            <textarea placeholder="Nhu cầu *" required rows="3" style="width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.9rem;color:#0f172a;resize:none;font-family:inherit"></textarea>
+          </div>
+          <button type="submit" style="width:100%;padding:12px;background:var(--orange);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;box-shadow:0 8px 20px rgba(255,107,0,0.3);margin-top:10px;transition:background 0.3s" onmouseover="this.style.background='#e65c00'" onmouseout="this.style.background='var(--orange)'">Đăng ký</button>
+        </form>
+      </div>
+
+      <!-- Right: Schedule -->
+      <div style='background:var(--navy);border-radius:16px;padding:24px 20px;color:#fff;box-shadow:0 20px 40px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.05);height:100%;display:flex;flex-direction:column'>
+        <div style='display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px'>
+          <span style='font-size:1.4rem'>📅</span>
+          <h3 style='font-size:1.2rem;font-weight:800;color:#fff;text-transform:uppercase;margin:0'>Lịch Khai Giảng</h3>
+        </div>
+        
+        <!-- TTT3+ Card -->
+        <div style='background:var(--dark);border-left:4px solid var(--orange);border-radius:12px;padding:16px;margin-bottom:16px;box-shadow:0 10px 20px rgba(0,0,0,0.2)'>
+          <div style='display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;gap:8px;flex-wrap:wrap'>
+            <h4 style='color:var(--orange);font-size:1rem;font-weight:800;text-transform:uppercase;margin:0'>Train The Trainer 3+</h4>
+            <span style='background:rgba(255,107,0,0.1);color:var(--orange);padding:2px 8px;border-radius:100px;font-size:0.7rem;font-weight:700;white-space:nowrap'>Offline 3 Ngày</span>
+          </div>
+          
+          <div style='display:flex;gap:12px;align-items:center'>
+            <div style='width:32px;height:32px;border-radius:50%;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0'>📍</div>
+            <div>
+              <div style='color:#94a3b8;font-size:0.8rem;margin-bottom:2px'>Tại TP. Hồ Chí Minh</div>
+              <div style='font-weight:700;font-size:1rem;color:#fff'>26 - 28/06/2026</div>
+            </div>
+          </div>
+          <div style='height:1px;background:rgba(255,255,255,0.05);margin:12px 0;border-bottom:1px dashed rgba(255,255,255,0.1)'></div>
+          <div style='display:flex;gap:12px;align-items:center'>
+            <div style='width:32px;height:32px;border-radius:50%;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0'>📍</div>
+            <div>
+              <div style='color:#94a3b8;font-size:0.8rem;margin-bottom:2px'>Tại Hà Nội</div>
+              <div style='font-weight:700;font-size:1rem;color:#fff'>17 - 19/07/2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PDT Card -->
+        <div style='background:var(--dark);border-left:4px solid #818cf8;border-radius:12px;padding:16px;box-shadow:0 10px 20px rgba(0,0,0,0.2)'>
+          <div style='display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;gap:8px;flex-wrap:wrap'>
+            <h4 style='color:#818cf8;font-size:1rem;font-weight:800;text-transform:uppercase;margin:0;line-height:1.3'>Tự Động Hóa<br>Thiết Kế Khóa Học (PDT)</h4>
+            <span style='background:rgba(129,140,248,0.1);color:#818cf8;padding:2px 8px;border-radius:100px;font-size:0.7rem;font-weight:700;white-space:nowrap'>Online / Offline</span>
+          </div>
+          
+          <div style='display:flex;gap:12px;align-items:center'>
+            <div style='width:32px;height:32px;border-radius:50%;background:rgba(129,140,248,0.1);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0'>🌐</div>
+            <div>
+              <div style='color:#94a3b8;font-size:0.8rem;margin-bottom:2px'>Học Online qua Zoom</div>
+              <div style='font-weight:700;font-size:1rem;color:#fff'>23 - 24/05/2026</div>
+            </div>
+          </div>
+          <div style='height:1px;background:rgba(255,255,255,0.05);margin:12px 0;border-bottom:1px dashed rgba(255,255,255,0.1)'></div>
+          <div style='display:flex;gap:12px;align-items:center'>
+            <div style='width:32px;height:32px;border-radius:50%;background:rgba(129,140,248,0.1);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0'>📍</div>
+            <div>
+              <div style='color:#94a3b8;font-size:0.8rem;margin-bottom:2px'>Học Offline tại HCM</div>
+              <div style='font-weight:700;font-size:1rem;color:#fff'>25 - 26/07/2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- PRICING -->
+<section id='pricing' style='padding:60px 20px;background:var(--navy);position:relative;overflow:hidden'>
+  <div style='max-width:1160px;margin:0 auto;position:relative;z-index:1'>
+    
+    <div style='margin-top:40px;display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:center'>
+<!-- TTT3+ SINGLE -->
+      <div style='flex:1;min-width:300px;max-width:340px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:28px 24px;position:relative;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.01)'">
+        <div style='font-size:0.75rem;color:#94a3b8;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;font-weight:700'>Khóa học lẻ</div>
+        <img src="Train-the-Trainer-3+.png?v=2" alt="TTT3+" style="height:52px;margin-bottom:12px;object-fit:contain;display:block">
+        <p style='color:#94a3b8;font-size:0.85rem;margin-bottom:16px;line-height:1.4'>Làm chủ kỹ năng đứng lớp & điều phối sân khấu.</p>
+        <div style='font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:2px'>13.990.000đ</div>
+        <div style='font-size:0.75rem;color:#64748b;margin-bottom:20px'>Giá niêm yết (Offline 3 ngày)</div>
+        
+        <ul style='list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px'>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Thời lượng: 3 ngày (6 buổi)</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Offline tại KS 4-5 sao (HCM & HN)</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Tặng Toolkit, Music, 70 Games</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Chứng nhận Trainer chuẩn 3+</span></li>
+        </ul>
+        <button onclick="scrollToForm()" style='width:100%;padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:12px;font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.3s' onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">Đăng Ký Khóa TTT3+</button>
+      <button onclick="openBrochureModal(event, 'Train The Trainer 3+')" style='width:100%;padding:12px;margin-top:10px;background:transparent;border:1px dashed rgba(255,107,0,0.5);color:var(--orange);border-radius:12px;font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.3s' onmouseover="this.style.background='rgba(255,107,0,0.1)';this.style.borderColor='var(--orange)'" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(255,107,0,0.5)'">📄 Tải Brochure TTT3+</button>
+      </div>
+
+      <!-- COMBO BUNDLE (HIGHLIGHT) -->
+      <div style='flex:1.2;min-width:320px;max-width:380px;background:linear-gradient(180deg,rgba(255,107,0,0.08),rgba(255,77,109,0.05));background-color:#1e293b;border:2px solid #ff4d6d;border-radius:24px;padding:36px 28px;position:relative;box-shadow:0 0 30px rgba(255,77,109,0.25);z-index:2'>
+        <div style='position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--orange),#ff4d6d,#3a86ff);color:#fff;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:700;letter-spacing:0.05em;white-space:nowrap;box-shadow:0 4px 12px rgba(255,77,109,0.3)'>🔥 ƯU ĐÃI TỐT NHẤT</div>
+        
+        <div style='text-align:center;margin-bottom:20px'>
+          <div style='display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px'>
+             <img src="Train-the-Trainer-3+.png?v=2" alt="TTT3+" style="height:40px;object-fit:contain;display:block">
+             <span style='color:#cbd5e1;font-weight:700;font-size:1.2rem'>+</span>
+             <img src="PDT-logo-puzzle.png" alt="PDT" style="height:40px;object-fit:contain;display:block">
+          </div>
+          <h3 style='font-size:1.6rem;color:#fff;margin-bottom:6px'>Combo Toàn Diện</h3>
+          <p style='color:#94a3b8;font-size:0.9rem;margin:0'>Trọn bộ TTT3+ & Tự động hóa thiết kế</p>
+        </div>
+
+        <div style='text-align:center;margin-bottom:24px;background:rgba(0,0,0,0.2);padding:12px;border-radius:16px'>
+          <div style='font-size:0.85rem;color:#94a3b8;text-decoration:line-through;margin-bottom:2px'>Tổng giá lẻ: 20.880.000đ</div>
+          <div style='font-size:1.5rem;font-weight:800;font-family:"Inter", sans-serif;color:var(--orange);letter-spacing:-0.5px;line-height:1.2'>LIÊN HỆ<br>NHẬN ƯU ĐÃI</div>
+          <div style='font-size:0.75rem;color:#10b981;font-weight:600;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:4px'><span>↓</span> Tiết kiệm tối đa chi phí</div>
+        </div>
+        
+        <ul style='list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:12px'>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:var(--orange);font-size:1rem;line-height:1'>✨</span> <span style='font-size:0.95rem;color:#fff;font-weight:500'>Lộ trình 5 ngày 100% Khép kín</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:var(--orange);font-size:1rem;line-height:1'>✨</span> <span style='font-size:0.95rem;color:#fff'>Trọn bộ quyền lợi 2 khóa học</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:var(--orange);font-size:1rem;line-height:1'>✨</span> <span style='font-size:0.95rem;color:#fff'>Cộng đồng Alumni 18.000+ VMP</span></li>
+        </ul>
+        <button onclick="scrollToForm()" style='width:100%;padding:14px;background:var(--orange);color:#fff;border:none;border-radius:12px;font-weight:700;font-size:1rem;cursor:pointer;box-shadow:0 8px 20px rgba(255,107,0,0.25);transition:all 0.3s;text-transform:uppercase' onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 24px rgba(255,107,0,0.35)';this.style.background='#ff7a1a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 20px rgba(255,107,0,0.25)';this.style.background='var(--orange)'">Đăng Ký Ngay</button>
+      </div>
+
+      <!-- PDT SINGLE -->
+      <div style='flex:1;min-width:300px;max-width:340px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:28px 24px;position:relative;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(129,140,248,0.3)';this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.01)'">
+        <div style='font-size:0.75rem;color:#94a3b8;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;font-weight:700'>Khóa học lẻ</div>
+        <img src="PDT-logo-puzzle.png" alt="PDT" style="height:52px;margin-bottom:12px;object-fit:contain;display:block">
+        <p style='color:#94a3b8;font-size:0.85rem;margin-bottom:16px;line-height:1.4'>Ứng dụng công nghệ AI vào quy trình TNA & TK</p>
+        <div style='font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:2px'>4.890.000đ</div>
+        <div style='font-size:0.75rem;color:#64748b;margin-bottom:20px'>Đến 6.890k (Tùy Online/Offline)</div>
+        
+        <ul style='list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px'>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Thời lượng: 2 ngày (4 buổi)</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Học Online/Offline KS 4-5 sao</span></li>
+          <li style='display:flex;align-items:flex-start;gap:10px'><span style='color:#64748b;font-weight:bold'>✓</span> <span style='font-size:0.9rem;color:#cbd5e1'>Làm chủ AI thiết kế tự động 100%</span></li>
+        </ul>
+        <button onclick="scrollToForm()" style='width:100%;padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:12px;font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.3s' onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">Đăng Ký Khóa PDT</button>
+      <button onclick="openBrochureModal(event, 'Tự Động Hóa PDT')" style='width:100%;padding:12px;margin-top:10px;background:transparent;border:1px dashed rgba(129,140,248,0.5);color:#818cf8;border-radius:12px;font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.3s' onmouseover="this.style.background='rgba(129,140,248,0.1)';this.style.borderColor='#818cf8'" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(129,140,248,0.5)'">📄 Tải Brochure PDT</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT POLICY -->
+<section style='padding:60px 20px;background:linear-gradient(180deg, var(--dark) 0%, var(--navy) 100%)'>
+  <div class='container' style='max-width:900px'>
+    <div style='text-align:left;margin-bottom:32px'>
+      <h2 style='font-size:2rem;color:#fff'>Chính Sách Hỗ Trợ Sau Khóa Học</h2>
+    </div>
+    
+    <div style='display:flex;flex-direction:column;gap:20px'>
+      
+      <div class='scroll-card' style='display:flex;align-items:flex-start;gap:20px'>
+        <div style='width:40px;height:60px;border:1px solid #fff;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;flex-shrink:0'>1</div>
+        <div>
+          <h3 style='color:var(--orange);font-size:1.1rem;margin-bottom:4px'>Coaching 1:1</h3>
+          <p style='color:#cbd5e1;font-size:0.9rem;line-height:1.5;margin:0'>Cơ hội coaching 1:1 sau khóa học (trị giá 5.000.000 đồng) giúp học viên giải quyết các vấn đề cụ thể.</p>
+        </div>
+      </div>
+
+      <div class='scroll-card' style='transition-delay:100ms;display:flex;align-items:flex-start;gap:20px'>
+        <div style='width:40px;height:60px;border:1px solid #fff;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;flex-shrink:0'>2</div>
+        <div>
+          <h3 style='color:var(--orange);font-size:1.1rem;margin-bottom:4px'>Cộng Đồng Hỗ Trợ</h3>
+          <p style='color:#cbd5e1;font-size:0.9rem;line-height:1.5;margin:0'>Tham gia và được hỗ trợ bởi cộng đồng Trainer chuyên nghiệp, nơi chia sẻ kinh nghiệm và giải pháp.</p>
+        </div>
+      </div>
+
+      <div class='scroll-card' style='transition-delay:200ms;display:flex;align-items:flex-start;gap:20px'>
+        <div style='width:40px;height:60px;border:1px solid #fff;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;flex-shrink:0'>3</div>
+        <div>
+          <h3 style='color:var(--orange);font-size:1.1rem;margin-bottom:4px'>Cập Nhật Miễn Phí</h3>
+          <p style='color:#cbd5e1;font-size:0.9rem;line-height:1.5;margin:0'>Cập nhật công cụ, biểu mẫu, phương pháp giảng dạy miễn phí mỗi năm, đón đầu xu hướng mới nhất.</p>
+        </div>
+      </div>
+
+      <div class='scroll-card' style='transition-delay:300ms;display:flex;align-items:flex-start;gap:20px'>
+        <div style='width:40px;height:60px;border:1px solid #fff;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;flex-shrink:0'>4</div>
+        <div>
+          <h3 style='color:var(--orange);font-size:1.1rem;margin-bottom:4px'>Tham Dự Lại Miễn Phí</h3>
+          <p style='color:#cbd5e1;font-size:0.9rem;line-height:1.5;margin:0'>Được tham dự lại lớp học miễn phí (chỉ đóng phí tổ chức), giúp học viên củng cố kiến thức.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ĐỐI TÁC TIÊU BIỂU -->
+<section style='padding:60px 20px;background:var(--dark);border-top:1px solid rgba(255,255,255,0.05)'>
+  <div class='container' style='max-width:960px'>
+    <div class='section-title'>
+      <h2 style='color:#fff;font-size:1.8rem'>Đối Tác Tiêu Biểu</h2>
+      <div class='divider'></div>
+      <p style='color:#94a3b8;margin-top:12px;font-size:0.95rem'>Hơn 800+ doanh nghiệp và tập đoàn hàng đầu đã tin tưởng đồng hành cùng VMP Academy.</p>
+    </div>
+    <div style='display:grid;grid-template-columns:repeat(5,1fr);gap:12px'>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:rgba(255,255,255,0.4);font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">NOVA GROUP</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#ef4444;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">ACECOOK</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#f97316;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">LIXIL</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#22c55e;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">TSUCHIYA</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:rgba(255,255,255,0.4);font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">NSRP</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#16a34a;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">CARLSBERG</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#ef4444;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">SUNJIN</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#3b82f6;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">VINFAST</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#1d4ed8;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">PHENIKAA</div>
+      <div style='height:60px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#ef4444;font-size:0.85rem;font-family:Outfit,sans-serif;letter-spacing:0.05em;transition:all 0.3s' onmouseover="this.style.borderColor='rgba(255,107,0,0.3)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">TDC</div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<section class='section' style='background:linear-gradient(135deg,#071029,#0D1B3E,#1a2a5e);text-align:center;padding:40px 20px'>
+  <div class='container'>
+    <div style='padding:40px;background:var(--glass);border:1px solid var(--border);border-radius:16px;max-width:850px;margin:0 auto'>
+      <div style='font-size:1.8rem;font-weight:800;margin-bottom:8px;font-family:Outfit,sans-serif;color:#fff'>VMP ACADEMY</div>
+      <div style='color:var(--orange);font-size:1.1rem;margin-bottom:32px;letter-spacing:0.05em;font-weight:600'>KIẾN TẠO ĐỘI NGŨ QUẢN LÝ BỀN VỮNG</div>
+      <div style='display:flex;justify-content:center;gap:32px;flex-wrap:wrap;color:#e2e8f0;font-size:1.05rem'>
+        <span style='display:flex;align-items:center;gap:10px'><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> vmptraining.com</span>
+        <span style='display:flex;align-items:center;gap:10px'><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Daotao@vmp.edu.vn</span>
+        <span style='display:flex;align-items:center;gap:10px'><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 1800 6981</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING CONTACT -->
+<div id='floatBtns' style='position:fixed;right:24px;bottom:32px;display:flex;flex-direction:column;gap:16px;z-index:1000'>
+  <a href='https://zalo.me/784767373107312162' target='_blank' title='Chat Zalo' style='width:56px;height:56px;border-radius:50%;background:#0068ff;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:800;color:#fff;text-decoration:none;box-shadow:0 6px 16px rgba(0,104,255,.4);transition:transform .2s' onmouseover='this.style.transform="scale(1.1)"' onmouseout='this.style.transform="scale(1)"'>Zalo</a>
+  <a href='https://m.me/2193132450953984' target='_blank' title='Messenger' style='width:56px;height:56px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.15);transition:transform .2s' onmouseover='this.style.transform="scale(1.1)"' onmouseout='this.style.transform="scale(1)"'><svg viewBox="0 0 36 36" width="40" height="40" fill="url(#messengerGrad)"><defs><linearGradient id="messengerGrad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00C6FF" /><stop offset="100%" stop-color="#0068FF" /></linearGradient></defs><path d="M18 3C9.716 3 3 9.387 3 17.27c0 4.492 2.19 8.483 5.564 11.233.19.155.308.384.316.63l.063 2.946c.026 1.206 1.345 1.94 2.42 1.353l3.21-1.748a.86.86 0 0 1 .632-.058c.895.258 1.834.397 2.795.397 8.284 0 15-6.387 15-14.27S26.284 3 18 3zm-3.666 18.064l-3.328-5.304c-.655-1.045.542-2.316 1.63-1.73l4.31 2.314c.42.226.936.226 1.355 0l3.665-1.966c.86-.462 1.83.473 1.325 1.278l-3.328 5.305c-.656 1.044-.543 2.315-1.63 1.73l-4.31-2.315a1.43 1.43 0 0 0-1.355 0l-3.666 1.965c-.86.463-1.83-.473-1.325-1.277z"/></svg></a>
+  <a href='tel:18006981' title='Gọi ngay' style='width:56px;height:56px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 16px rgba(255,107,0,.5);animation:pulse 2s infinite;transition:transform .2s' onmouseover='this.style.transform="scale(1.1)"' onmouseout='this.style.transform="scale(1)"'><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+</div>
+
+<!-- BROCHURE MODAL -->
+<div id="brochureModal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:9999;align-items:center;justify-content:center;backdrop-filter:blur(5px)">
+  <div style="background:#fff;border-radius:16px;padding:32px;width:90%;max-width:450px;position:relative;animation:fadeUp 0.3s ease">
+    <button onclick="closeBrochureModal()" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:2rem;line-height:1;cursor:pointer;color:#64748b;padding:0;display:flex;align-items:center">&times;</button>
+    <h3 style="color:#0f172a;font-size:1.5rem;margin-bottom:8px">Tải Tài Liệu Khóa Học</h3>
+    <p style="color:#64748b;font-size:0.95rem;margin-bottom:24px;line-height:1.5">Vui lòng điền thông tin để VMP gửi tài liệu khóa <strong id="brochureCourseName" style="color:var(--orange)"></strong> qua email của bạn.</p>
+    <form onsubmit="submitBrochure(event)" style="display:flex;flex-direction:column;gap:16px">
+      <input type="text" placeholder="Họ và Tên *" required style="width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;color:#0f172a;font-family:inherit">
+      <input type="text" placeholder="Chức vụ" style="width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;color:#0f172a;font-family:inherit">
+      <input type="email" placeholder="Email nhận tài liệu *" required style="width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;color:#0f172a;font-family:inherit">
+      <input type="tel" placeholder="Số điện thoại *" required style="width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;color:#0f172a;font-family:inherit">
+      <textarea placeholder="Câu hỏi liên quan (nếu có)" rows="2" style="width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;color:#0f172a;font-family:inherit;resize:vertical"></textarea>
+      <button type="submit" class="btn btn-orange" style="width:100%;padding:14px;font-size:1.1rem;margin-top:8px">Gửi Tài Liệu Ngay</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function scrollToForm() {
+  const el = document.getElementById('register-section');
+  if (el) {
+    const y = el.getBoundingClientRect().top + window.scrollY - 60;
+    window.scrollTo({top: y, behavior: 'smooth'});
+  }
+}
+function submitForm(e){e.preventDefault();var msg=document.getElementById('formMsg');if(msg)msg.style.display='block';e.target.reset();alert('Cảm ơn bạn đã đăng ký! Đội ngũ VMP sẽ liên hệ sớm nhất.');}
+window.addEventListener('scroll',function(){var s=window.scrollY;var btn=document.getElementById('floatBtns');if(btn){btn.style.opacity=s>300?'1':'0'}});
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.scroll-card').forEach(card => observer.observe(card));
+
+/* Brochure Modal Logic */
+function openBrochureModal(e, courseName) {
+  if (e) e.preventDefault();
+  document.getElementById('brochureCourseName').innerText = courseName;
+  var modal = document.getElementById('brochureModal');
+  modal.style.display = 'flex';
+}
+function closeBrochureModal() {
+  document.getElementById('brochureModal').style.display = 'none';
+}
+function submitBrochure(e) {
+  e.preventDefault();
+  closeBrochureModal();
+  alert('Đăng ký tải tài liệu thành công! VMP Academy sẽ gửi file qua email bạn vừa cung cấp.');
+}
+</script></body></html>
