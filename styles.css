@@ -241,10 +241,9 @@ body.nav-open {
 .eyebrow {
   margin: 0 0 14px;
   color: var(--orange);
-  font-size: 13px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0;
-  text-transform: uppercase;
 }
 
 h1,
@@ -327,7 +326,7 @@ h3 {
 
 .hero-stats {
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 19px;
 }
 
 .hero-stats div {
@@ -441,6 +440,7 @@ h3 {
 .problem-grid,
 .audience-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  
 }
 
 .problem-card {
@@ -465,6 +465,7 @@ h3 {
   border-radius: 18px;
   font-size: 22px;
   font-weight: 700;
+  
 }
 
 .problem-card p,
@@ -750,7 +751,6 @@ a:focus-visible {
   color: var(--orange);
   font-size: clamp(24px, 2.5vw, 32px);
   line-height: 1.1;
-  text-transform: uppercase;
 }
 
 .price-card ul {
@@ -826,8 +826,8 @@ a:focus-visible {
   width: min(100% - 40px, var(--max));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(260px, 1.4fr) repeat(4, minmax(150px, 0.75fr));
-  gap: clamp(24px, 3vw, 42px);
+  grid-template-columns: minmax(260px, 1.4fr) repeat(3, minmax(150px, 0.75fr));
+  gap: clamp(24px, 3vw, 30px);
   align-items: start;
 }
 
