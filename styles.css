@@ -915,10 +915,24 @@ a:focus-visible {
 }
 
 .brochure-modal {
-  width: min(92vw, 520px);
-  padding: 0;
+  width: 100%;
+  max-width: none;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 18px;
   border: 0;
-  background: transparent;
+  background: rgba(26, 45, 87, 0.86);
+}
+
+.brochure-modal[open],
+.brochure-modal.is-open {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
 }
 
 .brochure-modal::backdrop {
@@ -927,6 +941,10 @@ a:focus-visible {
 
 .modal-box {
   position: relative;
+  width: min(92vw, 520px);
+  max-height: calc(100dvh - 36px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-box h2 {

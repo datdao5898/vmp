@@ -1,4 +1,5 @@
 const modalButtons = document.querySelectorAll("[data-modal]");
+const modalCloseButtons = document.querySelectorAll("[data-close-modal]");
 const navToggle = document.querySelector(".nav-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 
@@ -41,24 +42,72 @@ if (navToggle && mobileNav) {
   });
 }
 
+function openBrochureModal(modal) {
+  if (!modal) return;
+  document.body.classList.add("modal-open");
+  modal.classList.add("is-open");
+
+  if (typeof modal.showModal === "function") {
+    try {
+      if (!modal.open) {
+        modal.showModal();
+      } else {
+        modal.setAttribute("open", "");
+      }
+      return;
+    } catch (error) {
+      // Fall through to the manual open-state path for browsers that
+      // support <dialog> imperfectly, especially on older iOS builds.
+    }
+  }
+
+  modal.setAttribute("open", "");
+}
+
+function closeBrochureModal(modal) {
+  if (!modal) return;
+  modal.classList.remove("is-open");
+
+  if (typeof modal.close === "function" && modal.open) {
+    modal.close();
+  } else {
+    modal.removeAttribute("open");
+  }
+
+  document.body.classList.remove("modal-open");
+}
+
 modalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.getElementById(button.dataset.modal);
     if (!modal) return;
-    modal.showModal();
-    document.body.classList.add("modal-open");
+    openBrochureModal(modal);
+  });
+});
+
+modalCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    closeBrochureModal(button.closest("dialog"));
   });
 });
 
 document.querySelectorAll("dialog").forEach((dialog) => {
   dialog.addEventListener("close", () => {
     document.body.classList.remove("modal-open");
+    dialog.classList.remove("is-open");
   });
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {
-      dialog.close();
+      closeBrochureModal(dialog);
     }
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  document.querySelectorAll("dialog.brochure-modal[open]").forEach((dialog) => {
+    closeBrochureModal(dialog);
   });
 });
 
